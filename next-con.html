@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>מתי הכנס הבא? לוח כנסי משחקי תפקידים | שער להרפתקה</title>
+<meta name="description" content="לוח כנסי משחקי התפקידים והפנטזיה בישראל: אייקון, דרקוניקון, כרמיקון, הרפתקון ועוד, לפי חודש, עם הכנס הקרוב ביותר.">
+<meta name="theme-color" content="#9B1528">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://gate.roleplay.top/next-con">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="שער להרפתקה">
+<meta property="og:locale" content="he_IL">
+<meta property="og:title" content="מתי הכנס הבא? לוח כנסי משחקי תפקידים | שער להרפתקה">
+<meta property="og:description" content="לוח כנסי משחקי התפקידים והפנטזיה בישראל: אייקון, דרקוניקון, כרמיקון, הרפתקון ועוד, לפי חודש, עם הכנס הקרוב ביותר.">
+<meta property="og:url" content="https://gate.roleplay.top/next-con">
+<meta property="og:image" content="https://gate.roleplay.top/static/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/static/rpg-game.png" type="image/png">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap">
+<style>
+/* ==========================================================================
+   שער להרפתקה: עמודים פנימיים
+   The home page is the gate. Every page behind it is the map: parchment,
+   a hex grid, and one sheet of content laid on top of it.
+   ========================================================================== */
+:root{
+  --paper:#F5EFE5;
+  --paper-hi:#FFFCF7;
+  --paper-lo:#E6DAC4;
+  --ink:#2A1A10;
+  --ink-2:#5B4531;
+  --line:rgba(90,58,28,.24);
+  --red:#9B1528;
+  --red-deep:#620B18;
+  --blue:#0E2680;
+  --ink-blue:#1A2C6E;
+  --gold:#B8862B;
+  --gold-bright:#E9B44C;
+  --bone:#F7F0E6;
+  --display:'Karantina','Noto Sans Hebrew','Arial Hebrew','Segoe UI',sans-serif;
+  --body:'Noto Sans Hebrew','Arial Hebrew','Segoe UI',Tahoma,sans-serif;
+  --pad-x:clamp(1rem,4vw,3rem);
+  --topbar:4rem;
+  --ease:cubic-bezier(.16,1,.3,1);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--topbar) + 1rem);background:var(--paper);color:var(--ink);scrollbar-color:var(--gold) var(--paper-lo);scrollbar-width:thin}
+body{
+  margin:0;min-height:100vh;display:flex;flex-direction:column;
+  font-family:var(--body);font-size:1.0625rem;line-height:1.7;color:var(--ink);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;caret-color:var(--red);
+  background-color:var(--paper);
+  background-image:
+    radial-gradient(ellipse 120% 90% at 50% 45%,transparent 60%,rgba(110,70,25,.2) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='93.53' height='162'%3E%3Cpath d='M46.77 0L93.53 27L93.53 81L46.77 108L0 81L0 27ZM46.77 108V162' fill='none' stroke='%235A3A1C' stroke-opacity='.17' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-attachment:fixed,scroll;
+}
+/* paper grain over everything, under the content */
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .32 0 0 0 0 .18 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+/* a compass rose in the corner of the map */
+body::after{
+  content:"";position:absolute;z-index:0;pointer-events:none;width:clamp(120px,14vw,190px);aspect-ratio:1;left:clamp(.5rem,2vw,2rem);top:calc(var(--topbar) + clamp(1rem,3vh,2rem));opacity:.4;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-60 -60 120 120'%3E%3Cg fill='none' stroke='%235A3A1C' stroke-width='1'%3E%3Ccircle r='40'/%3E%3Ccircle r='34' stroke-dasharray='2 4'/%3E%3Cpath d='M0-56L7-7L56 0L7 7L0 56L-7 7L-56 0L-7-7Z'/%3E%3Cpath d='M-28-28L-4 0L-28 28M28-28L4 0L28 28' stroke-opacity='.6'/%3E%3C/g%3E%3Cpath d='M0-56L7-7L0 0L-7-7Z' fill='%239B1528'/%3E%3Ctext y='-44' x='0' text-anchor='middle' font-family='sans-serif' font-size='9' font-weight='700' fill='%235A3A1C' transform='translate(0 -18)'%3E%D7%A6%3C/text%3E%3C/svg%3E") no-repeat center/contain;
+}
+::selection{background:var(--red);color:var(--bone)}
+img{max-width:100%;height:auto}
+[hidden]{display:none!important}
+a{color:var(--red);text-underline-offset:.22em;text-decoration-thickness:1px}
+a:hover{color:var(--red-deep)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:fixed;top:.5rem;right:.5rem;z-index:100;background:var(--bone);color:var(--red-deep);padding:.5rem 1rem;font-weight:700;transform:translateY(-200%)}
+.skip:focus{transform:none}
+.display{font-family:var(--display);font-weight:700;line-height:.9;letter-spacing:.005em}
+
+/* ---------- top bar: the same red as the gate ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:var(--red);color:var(--bone);padding-top:env(safe-area-inset-top,0px);box-shadow:0 6px 18px -12px rgba(40,10,0,.6)}
+.topbar-inner{height:var(--topbar);max-width:1240px;margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-inline:var(--pad-x)}
+.brand{display:flex;align-items:center;gap:.6rem;color:inherit;text-decoration:none;font-family:var(--display);font-weight:700;font-size:2rem;line-height:1}
+.brand:hover{color:inherit}
+.brand svg{width:18px;height:26px;flex:none}
+.topnav{display:flex;align-items:center;gap:clamp(.75rem,2vw,1.75rem)}
+.topnav a{color:var(--bone);text-decoration:none;font-weight:600;font-size:.98rem;padding:.35rem 0;border-bottom:1px solid transparent}
+.topnav a:hover{color:var(--bone);border-bottom-color:currentColor}
+.topnav a[aria-current="page"]{border-bottom-color:var(--gold-bright)}
+/* rule: on red or blue, the primary action is gold; on parchment it is red */
+.menu{position:relative;display:none}
+.menu summary{list-style:none;cursor:pointer;font-weight:600;padding:.4rem .9rem;border:1px solid rgba(247,240,230,.55);border-radius:999px}
+.menu summary::-webkit-details-marker{display:none}
+.menu[open] summary{background:var(--bone);color:var(--red-deep)}
+.menu ol{position:absolute;left:0;top:calc(100% + .6rem);margin:0;padding:.5rem;list-style:none;min-width:13rem;background:var(--paper-hi);border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px -16px rgba(60,35,10,.6)}
+.menu li a{display:block;padding:.55rem .8rem;color:var(--ink);text-decoration:none;border-radius:8px}
+.menu li a:hover{background:rgba(155,21,40,.08)}
+@media (max-width:860px){.topnav{display:none}.menu{display:block}:root{--topbar:3.6rem}}
+
+/* ---------- the one sheet of content ---------- */
+main{position:relative;z-index:1;flex:1;padding:clamp(1.5rem,5vh,3.5rem) var(--pad-x) clamp(2.5rem,7vh,4.5rem)}
+.sheet{
+  position:relative;max-width:860px;margin-inline:auto;
+  background:var(--paper-hi);
+  padding:clamp(1.5rem,5vw,3.75rem) clamp(1.25rem,5vw,4rem);
+  border-radius:10px;
+  border:1px solid rgba(90,58,28,.1);
+  box-shadow:0 1px 2px rgba(60,35,10,.08),0 24px 56px -30px rgba(60,35,10,.4);
+}
+.sheet.wide{max-width:1240px}
+
+/* ---------- typography inside the sheet ---------- */
+.crumbs{display:flex;flex-wrap:wrap;gap:.3rem .5rem;margin:0 0 1.4rem;font-size:.9rem;color:var(--ink-2)}
+.crumbs a{color:var(--ink-2);text-decoration:none}
+.crumbs a:hover{color:var(--red);text-decoration:underline}
+.crumbs span[aria-hidden]{opacity:.6}
+.tag{display:inline-block;font-size:.85rem;font-weight:700;padding:.12rem .7rem;border-radius:999px;background:rgba(155,21,40,.1);color:var(--red-deep);margin-bottom:.8rem}
+.sheet h1{font-family:var(--display);font-weight:700;line-height:.95;font-size:clamp(2.8rem,6.5vw,4.4rem);color:var(--red-deep);margin:0 0 1rem;text-wrap:balance}
+.sheet h2{font-family:var(--display);font-weight:700;line-height:1.02;font-size:clamp(1.9rem,3.6vw,2.5rem);color:var(--ink-blue);margin:2.4rem 0 .8rem;text-wrap:balance}
+.sheet h3{font-weight:700;font-size:1.2rem;line-height:1.4;margin:1.8rem 0 .5rem;color:var(--ink)}
+.sheet p{margin:0 0 1.15em;font-size:1.1rem;line-height:1.85;max-width:68ch}
+.sheet .lede{font-size:clamp(1.12rem,1.5vw,1.28rem);color:var(--ink-2)}
+.sheet ul:not([class]),.sheet ol:not([class]){margin:0 0 1.3em;padding-right:1.4rem;max-width:66ch}
+.sheet :is(ul,ol):not([class]) > li{margin-bottom:.5rem;line-height:1.75;font-size:1.08rem}
+.sheet ul:not([class]) > li::marker{color:var(--gold)}
+.sheet ol:not([class]) > li::marker{color:var(--red);font-weight:700}
+.sheet strong{color:var(--ink)}
+.sheet hr{border:0;height:1px;background:var(--line);margin:2.5rem 0}
+.sheet blockquote{margin:1.5rem 0;padding:1rem 1.2rem;background:rgba(233,180,76,.14);border-radius:8px;color:var(--ink-2)}
+.sheet table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;font-size:1rem}
+.sheet th,.sheet td{text-align:right;padding:.55rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}
+.sheet th{color:var(--ink-blue)}
+.sheet code{font-size:.92em;background:rgba(90,58,28,.08);padding:.05rem .35rem;border-radius:4px}
+.note{background:rgba(233,180,76,.16);border:1px solid rgba(184,134,43,.35);border-radius:10px;padding:.8rem 1rem;margin:0 0 1.6rem;font-size:.97rem;color:var(--ink-2)}
+.note p{margin:0;font-size:inherit;line-height:1.6}
+.table-wrap{overflow-x:auto}
+
+/* the red box at the end of every article: back to the gate */
+.gate-box{margin-top:3rem;background:var(--red);color:var(--bone);border-radius:12px;padding:clamp(1.3rem,3vw,2rem);box-shadow:0 18px 40px -24px rgba(98,11,24,.8)}
+.gate-box h2,.gate-box h3{font-weight:700;font-size:clamp(1.25rem,2vw,1.5rem);line-height:1.35;color:var(--bone);margin:0 0 .6rem}
+.gate-box p,.gate-box li{color:var(--bone);font-size:1.02rem;max-width:none}
+.gate-box ul{padding-right:1.2rem;margin-bottom:1rem}
+.sheet .gate-box ul > li::marker{color:var(--gold-bright)}
+.gate-box a{color:var(--bone)}
+.gate-box a.btn-gold{color:var(--ink)}
+
+/* ---------- actions ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:2.9rem;padding:.65rem 1.5rem;font:inherit;font-weight:700;font-size:1rem;line-height:1.2;text-decoration:none;cursor:pointer;border:0;border-radius:8px;transition:background-color .2s,color .2s,transform .2s var(--ease)}
+.btn:active{transform:translateY(1px)}
+.btn-solid{background:var(--red);color:var(--bone)}
+.btn-solid:hover{background:var(--red-deep);color:var(--bone)}
+.btn-gold{background:var(--gold-bright);color:var(--ink)}
+.btn-gold:hover{background:#F5CB6E;color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn-ghost:hover{background:rgba(42,26,16,.07);color:var(--ink)}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem 1rem;align-items:center}
+
+/* ---------- lists of links (article index, system cards) ---------- */
+.cards{list-style:none;margin:1.4rem 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem;max-width:none}
+@media (max-width:1000px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.cards{grid-template-columns:1fr}}
+.cards li{margin:0}
+.card{display:flex;flex-direction:column;gap:.35rem;height:100%;padding:1.1rem 1.2rem;border:1px solid var(--line);border-radius:10px;background:#FBF6EE;color:var(--ink);text-decoration:none;transition:border-color .2s,background-color .2s,transform .2s var(--ease)}
+.card:hover{border-color:var(--red);background:#FFFFFF;color:var(--ink);transform:translateY(-2px)}
+.card .tag{align-self:flex-start;margin:0 0 .2rem}
+.card-title{font-weight:700;font-size:1.15rem;line-height:1.4;color:var(--red-deep)}
+.sheet .card-text{font-size:.98rem;line-height:1.6;color:var(--ink-2);margin:0;flex:1;max-width:none}
+.card-more{font-weight:700;color:var(--red);font-size:.95rem}
+.section-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1rem}
+
+
+/* the original shield-and-sword icon, on a bone disc so it reads on red and on blue */
+.brand-logo{width:36px;height:36px;flex:none;border-radius:50%;background:var(--bone);padding:3px;object-fit:contain}
+.foot-id{display:flex;align-items:center;gap:.9rem;line-height:1.7}
+.foot-id p{line-height:1.7}
+.foot-logo{flex:none;width:3.4em;height:3.4em;border-radius:50%;background:var(--bone);padding:.3em;object-fit:contain}
+
+/* ---------- footer: red, like the top bar, so the parchment sits between two bands ---------- */
+.site-foot{position:relative;z-index:1;background:var(--red);color:var(--bone);padding:1.6rem var(--pad-x) calc(1.6rem + env(safe-area-inset-bottom,0px));margin-top:auto}
+.footer{max-width:1240px;margin-inline:auto;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem 3rem;align-items:center;font-size:.95rem;color:var(--rose,#F6C6BB)}
+.footer p{margin:0;color:#F6C6BB}
+.footer strong{color:var(--bone)}
+.footer a{color:var(--bone)}
+.footer a:hover{color:var(--gold-bright)}
+.footer nav{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem}
+.footer nav a{font-weight:600;color:var(--bone)}
+.site-foot :focus-visible{outline-color:var(--gold-bright)}
+@media (max-width:760px){.footer{grid-template-columns:1fr}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+@media print{
+  body{background:#fff}body::before,body::after,.topbar,.site-foot,.gate-box{display:none}
+  .sheet{box-shadow:none;padding:0;max-width:none}
+}
+
+</style>
+<style>
+.con{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(1.5rem,5vw,4rem);align-items:end;margin-top:.5rem}
+.con-when{font-size:clamp(1.1rem,1.6vw,1.35rem);font-weight:700;color:var(--ink-2);margin:0}
+.sheet .con-name{font-family:var(--display);font-weight:700;font-size:clamp(3.6rem,9vw,7rem);line-height:.85;margin:.4rem 0 0;max-width:none;text-wrap:balance}
+.con-name a{color:var(--red-deep);text-decoration:none}
+.con-name a:hover{color:var(--red);text-decoration:underline;text-decoration-thickness:3px}
+.sheet .con-side p{font-size:1.05rem}
+.sheet .con-when{font-size:clamp(1.1rem,1.6vw,1.35rem)}
+.sheet .year{list-style:none;margin:clamp(1.75rem,5vh,2.75rem) 0 0;padding:0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));border-top:1px solid var(--line);max-width:none}
+.sheet .year li{padding:.6rem .45rem .3rem;min-height:5.5rem;border-right:1px solid var(--line);font-size:.82rem;line-height:1.4;margin:0}
+.sheet .year li:first-child{border-right:0}
+.year .m{display:block;font-weight:700;color:var(--ink-2);margin-bottom:.35rem;font-size:.85rem}
+.year li.now{border-top:3px solid var(--gold-bright);margin-top:-2px}
+.year li.now .m{color:var(--ink)}
+.year a{display:block;text-decoration:none;line-height:1.3;margin-bottom:.3rem;font-weight:600;color:var(--ink)}
+.year a:hover{color:var(--red);text-decoration:underline}
+.year a.next{background:var(--red);color:var(--bone);padding:.1rem .3rem;margin-inline:-.3rem;border-radius:3px}
+.sheet .disclaimer{font-size:.9rem;color:var(--ink-2);margin-top:1rem}
+@media (max-width:860px){
+  .con{grid-template-columns:1fr}
+  .sheet .year{grid-template-columns:repeat(12,8.5rem);overflow-x:auto;padding-bottom:.5rem}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://gate.roleplay.top/next-con#page",
+   "url": "https://gate.roleplay.top/next-con",
+   "name": "מתי הכנס הבא? לוח כנסי משחקי תפקידים בישראל",
+   "inLanguage": "he-IL",
+   "isPartOf": {
+    "@id": "https://gate.roleplay.top/#website"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">דילוג לתוכן</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="/" aria-label="שער להרפתקה, דף הבית">
+      <img class="brand-logo" src="/static/rpg-game.png" alt="" width="36" height="36">
+      שער להרפתקה
+    </a>
+    <nav class="topnav" aria-label="ניווט ראשי">
+      <a href="/">בית</a>
+      <a href="/search">חיפוש</a>
+      <a href="/articles">מאמרים</a>
+      <a href="/quiz">שאלון התאמה</a>
+      <a href="/next-con" aria-current="page">מתי הכנס הבא?</a>
+    </nav>
+    <details class="menu">
+      <summary>תפריט</summary>
+      <ol>
+        <li><a href="/">בית</a></li>
+        <li><a href="/search">חיפוש</a></li>
+        <li><a href="/articles">מאמרים</a></li>
+        <li><a href="/quiz">שאלון התאמה</a></li>
+        <li><a href="/next-con" aria-current="page">מתי הכנס הבא?</a></li>
+      </ol>
+    </details>
+  </div>
+</header>
+<main id="content">
+<div class="sheet wide">
+  <h1>מתי הכנס הבא?</h1>
+  <div class="con">
+    <!-- prerender:con --><div id="con-main"><p class="con-when muted">מתקיים בדרך כלל באוקטובר</p><p class="con-name"><a href="https://www.icon.org.il/" target="_blank" rel="noopener noreferrer">פסטיבל אייקון</a></p></div><div class="con-side" id="con-side"><p>אירוע הדגל השנתי של קהילת חובבי הז&#x27;אנר, עם מתחם ענק למשחקי תפקידים, דוכנים ועוד. מיקום: תל אביב.</p><p class="muted">באותו חודש: <a href="https://libra.co.il/" target="_blank" rel="noopener noreferrer">לארפ ליברה</a>.</p><div class="actions"><a class="btn btn-solid" href="https://www.icon.org.il/" target="_blank" rel="noopener noreferrer">לפרטים באתר הרשמי</a></div></div><!-- /prerender:con -->
+  </div>
+  <ol class="year" id="con-year" aria-label="כנסים בשנה הקרובה, לפי חודש"><!-- prerender:year --><li class="now" aria-current="date"><span class="m">ספטמבר</span></li><li><span class="m">אוקטובר</span><a href="https://www.icon.org.il/" target="_blank" rel="noopener noreferrer" class="next">פסטיבל אייקון</a><a href="https://libra.co.il/" target="_blank" rel="noopener noreferrer">לארפ ליברה</a></li><li><span class="m">נובמבר</span></li><li><span class="m">דצמבר</span><a href="https://karmicon.roleplay.org.il/index.html" target="_blank" rel="noopener noreferrer">כנס כרמיקון</a><a href="https://swordsandwizardry.co.il/adventurecon/" target="_blank" rel="noopener noreferrer">כנס הרפתקון</a></li><li><span class="m">ינואר</span></li><li><span class="m">פברואר</span></li><li><span class="m">מרץ</span><a href="https://dorot-con.org.il/" target="_blank" rel="noopener noreferrer">כנס דורות</a></li><li><span class="m">אפריל</span></li><li><span class="m">מאי</span></li><li><span class="m">יוני</span></li><li><span class="m">יולי</span></li><li><span class="m">אוגוסט</span><a href="https://dragoncon.co.il/" target="_blank" rel="noopener noreferrer">כנס דרקוניקון</a></li><!-- /prerender:year --></ol>
+  <p class="disclaimer">המועדים משוערים. כדאי לבדוק באתרי המארגנים.</p>
+</div>
+<script>
+(() => {
+  const MONTHS = ['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function renderCons(all){
+    const events = all.filter(it => [].concat(it.type).includes('event') && it.month >= 1 && it.month <= 12);
+    const now = new Date(), m = now.getMonth() + 1, y = now.getFullYear();
+    const when = e => new Date(e.month < m ? y + 1 : y, e.month - 1, 1);
+    const sorted = [...events].sort((a,b) => when(a) - when(b));
+    const next = sorted[0];
+    const main = document.getElementById('con-main'), side = document.getElementById('con-side');
+    if (!next){ main.innerHTML = '<p class="con-when">אין כנסים קרובים זמינים כרגע.</p>'; side.innerHTML = ''; return; }
+    const same = sorted.filter(e => e !== next && e.month === next.month);
+    main.innerHTML = `<p class="con-when">${next.month === m ? 'מתקיים בדרך כלל החודש' : 'מתקיים בדרך כלל ב' + MONTHS[next.month-1]}</p><p class="con-name"><a href="${esc(next.link)}" target="_blank" rel="noopener noreferrer">${esc(next.name)}</a></p>`;
+    side.innerHTML = `<p>${esc(next.description || '')}${next.location ? ' מיקום: ' + esc(next.location) + '.' : ''}</p>${same.length ? `<p>באותו חודש: ${same.map(e => `<a href="${esc(e.link)}" target="_blank" rel="noopener noreferrer">${esc(e.name)}</a>`).join(', ')}.</p>` : ''}<div class="actions"><a class="btn btn-solid" href="${esc(next.link)}" target="_blank" rel="noopener noreferrer">לפרטים באתר הרשמי</a></div>`;
+    document.getElementById('con-year').innerHTML = MONTHS.map((_, i) => {
+      const mo = (m - 1 + i) % 12 + 1, evs = events.filter(e => e.month === mo);
+      return `<li class="${mo === m ? 'now' : ''}"${mo === m ? ' aria-current="date"' : ''}><span class="m">${MONTHS[mo-1]}</span>${evs.map(e => `<a href="${esc(e.link)}" target="_blank" rel="noopener noreferrer"${e === next ? ' class="next"' : ''}>${esc(e.name)}</a>`).join('')}</li>`;
+    }).join('');
+  }
+  fetch('/data.json', { cache: 'no-cache' }).then(r => r.json()).then(d => renderCons(d.communityData || [])).catch(() => {});
+})();
+</script>
+</main>
+<div class="site-foot">
+  <footer class="footer">
+    <div class="foot-id"><img class="foot-logo" src="/static/rpg-game.png" alt="" width="52" height="52"><div>
+      <p><strong>שער להרפתקה</strong>, שער הכניסה לתחום משחקי התפקידים.</p>
+      <p>מנוהל על ידי <a href="https://roleplay.top/">גמ"ה - גלגול מיזמים התנדבותיים</a>. <a href="https://lp.reuven.click">ראובן מנדלוביץ׳</a></p>
+    </div></div>
+    <nav aria-label="קישורים נוספים">
+      <a href="/">בית</a>
+      <a href="/search">חיפוש</a>
+      <a href="/articles">מאמרים</a>
+      <a href="/quiz">שאלון התאמה</a>
+      <a href="/next-con">מתי הכנס הבא?</a>
+    </nav>
+  </footer>
+</div>
+<script>document.querySelectorAll('.menu a').forEach(a => a.addEventListener('click', () => { a.closest('details').open = false; }));</script>
+</body>
+</html>

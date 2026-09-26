@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "name": "שער להרפתקה",
+  "description": "רוצים להתחיל לשחק מבוכים ודרקונים? אתר שער להרפתקה הוא המדריך המקיף למשחקי תפקידים בישראל. האתר מיועד לשחקנים חדשים, להורים מבולבלים, ולמי ששמע על \"משחקי תפקידים\" ורוצה סוף סוף להיכנס לתחביב. מצאו חוגים, קבוצות משחק, כנסים (אייקון, דרקוניקון), חנויות ומדריכים למתחילים (D&D, פאת'פיינדר, לארפ).",
+  "contact": "gate@roleplay.top",
+  "organization": "גמ\"ה - גלגול מיזמים התנדבותיים",
+  "maintainer": "ראובן מנדלוביץ׳ (https://lp.reuven.click)",
+  "knowledge_files": {
+    "llms_txt": "https://gate.roleplay.top/llms.txt",
+    "sitemap": "https://gate.roleplay.top/sitemap.xml",
+    "directory_data": "https://gate.roleplay.top/data.json"
+  },
+  "actions": [
+    {
+      "name": "fetch_directory_data",
+      "description": "שליפת מאגר הנתונים המלא של הקהילות, החוגים, החנויות והכנסים בפורמט JSON נקי. מיועד לחיפוש וסינון אוטומטי.",
+      "url": "https://gate.roleplay.top/data.json",
+      "method": "GET"
+    },
+    {
+      "name": "read_articles_index",
+      "description": "צפייה באינדקס המאמרים והמדריכים דרך עמוד ה-HTML, כדי לאתר איזה מדריכים זמינים לקריאה.",
+      "url": "https://gate.roleplay.top/articles/",
+      "method": "GET"
+    },
+    {
+      "name": "read_article_markdown",
+      "description": "קריאת התוכן של מאמר ספציפי בפורמט Markdown (הפורמט האידיאלי והמהיר ביותר למודלי שפה). יש להחליף את {filename} בשם הקובץ הרצוי ללא סיומת.",
+      "url": "https://gate.roleplay.top/articles/files/{filename}.md",
+      "method": "GET",
+      "parameters": {
+        "filename": {
+          "type": "string",
+          "description": "שם קובץ המאמר (לדוגמה: what-is-rpg או tabletop-rpg)."
+        }
+      }
+    }
+  ]
+}

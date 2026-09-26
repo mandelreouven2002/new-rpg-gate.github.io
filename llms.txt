@@ -1,0 +1,46 @@
+# שער להרפתקה
+
+האתר "שער להרפתקה" (https://gate.roleplay.top) הוא המדריך המקיף בישראל למתחילים במשחקי תפקידים (RPG), מבוכים ודרקונים (D&D), פאת'פיינדר ולארפ (LARP). האתר מנוהל על ידי גמ"ה (גלגול מיזמים התנדבותיים) ונועד לעזור לשחקנים חדשים, להורים ולמתעניינים להבין את התחביב, לבחור שיטת משחק, ולמצוא קבוצות, חוגים, חנויות וכנסים (כמו אייקון ודרקוניקון).
+
+## עמודים ראשיים באתר
+- [עמוד הבית](https://gate.roleplay.top/)
+- [חיפוש קהילות, חוגים וחנויות](https://gate.roleplay.top/search)
+- [שאלון המלצה: מצאו את שיטת המשחק שלכם](https://gate.roleplay.top/quiz)
+- [מאמרים ומדריכים](https://gate.roleplay.top/articles/)
+
+## ניווט מהיר בעמוד הבית (מידע למתחילים)
+- [מה זה משחקי תפקידים? (TTRPG ו-LARP)](https://gate.roleplay.top/#intro-what-is)
+- [מה צריך כדי להתחיל?](https://gate.roleplay.top/#getting-started)
+- [בחירת שיטת משחק](https://gate.roleplay.top/#systems)
+- [איך מוצאים קבוצת משחק? (לבוגרים ולילדים)](https://gate.roleplay.top/#find-group)
+- [ארגונים, כנסים וקהילות בישראל](https://gate.roleplay.top/#community)
+- [איפה קונים ומשחקים (חנויות ציוד וחוגים)?](https://gate.roleplay.top/#resources)
+- [מתי הכנס הבא? לוח כנסים לפי חודש](https://gate.roleplay.top/next-con)
+- [ערוץ העדכונים בוואטסאפ](https://gate.roleplay.top/#whatsapp-updates)
+
+## שיטות משחק מומלצות למתחילים (תקציר)
+- מבוכים ודרקונים (D&D 5e): משחק התפקידים הנפוץ בעולם. ערכת ההתחלה מיועדת לגיל 12 ומעלה ול-2 עד 6 משתתפים כולל המנחה. אין תרגום רשמי לעברית.
+- חרבות וכשפים: שיטה קלת חוקים. הערכה למתחיל בעברית מיועדת לגילאי 8 ומעלה ול-2 עד 7 משתתפים, וכוללת חוברת לשחקן, חוברת למנחה, הרפתקת יחיד וסט של 7 קוביות.
+- פאת'פיינדר בעולמות פראיים: פנטזיה עם חוקים מהירים וקולנועיים. בעברית יש ספר בסיס, ערכת מנחה, אוגדן מפלצות והרפתקאות (הפונדק הוצאה לאור).
+- מנוע האפוקליפסה: מנוע סיפורי שמשתמש בשתי קוביות ק6. בעברית: וואנור (פנטזיה) ופלאים: גיבורי המחר (גיבורי-על מתבגרים).
+הנתונים המלאים נמצאים במפתח systemsData בקובץ https://gate.roleplay.top/data.json
+
+## מאמרים ומדריכים
+- [מה זה משחק תפקידים?](https://gate.roleplay.top/articles/what-is-rpg)
+- [משחקי תפקידים שולחניים (Tabletop RPG)](https://gate.roleplay.top/articles/tabletop-rpg)
+- [מה זה לארפ? (משחקי תפקידים חיים - LARP)](https://gate.roleplay.top/articles/larp-explained)
+- [משחקי תפקידים בישראל](https://gate.roleplay.top/articles/rpg-in-israel)
+- [משחקי תפקידים לילדים](https://gate.roleplay.top/articles/rpg-for-kids)
+- [נימוסים ליד השולחן (Table Manners)](https://gate.roleplay.top/articles/table-manners)
+- [משחק פרונטלי מול אונליין](https://gate.roleplay.top/articles/frontal-vs-online)
+- [ביבליוגרפיה ומקורות](https://gate.roleplay.top/articles/bibliography)
+
+## נתונים למכונות
+- מאגר הקהילות, החוגים, החנויות והכנסים בפורמט JSON: https://gate.roleplay.top/data.json
+- מפת אתר: https://gate.roleplay.top/sitemap.xml
+- קובץ פעולות לסוכני AI: https://gate.roleplay.top/agents.json
+
+## יצירת קשר ועדכונים
+- [גמ"ה - גלגול מיזמים התנדבותיים (ארגון האב)](https://roleplay.top/)
+- ראובן מנדלוביץ׳: https://lp.reuven.click
+- דוא"ל ליצירת קשר: gate@roleplay.top

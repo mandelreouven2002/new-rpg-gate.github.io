@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /manage/
+Disallow: /django-admin/
+
+Sitemap: https://gate.roleplay.top/sitemap.xml
+
+# AI / LLM knowledge files
+# https://gate.roleplay.top/llms.txt
+# https://gate.roleplay.top/agents.json
